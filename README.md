@@ -1,10 +1,10 @@
-# 晚安 · wanan
+# 晚安 · wen-wanan
 
 一个情侣向的睡前陪伴技能：触发后按「一句温柔情话 → 一个谐音梗猜谜小故事 → 一句温柔晚安」三段式输出。
 
-技能名 `wanan`，版本 `1.2.0`。
+技能名 `wen-wanan`，版本 `1.2.0`。
 
-> **两种用法**：作为 **DSH 插件**一键安装（`skill("wanan")` 可调用），或者作为**纯 Markdown 提示词**复制到任意 AI 助手。内容完全同一份。
+> **两种用法**：作为 **DSH 插件**一键安装（`skill("wen-wanan")` 可调用），或者作为**纯 Markdown 提示词**复制到任意 AI 助手。内容完全同一份。
 
 ## 它解决什么问题
 
@@ -21,7 +21,7 @@
 ## 目录结构
 
 ```
-wanan-skill/
+wen-wanan/
 ├── SKILL.md                  # 技能主体（YAML 头：name / version / description）
 ├── references/
 │   ├── pun-pool.md           # 谐音素材池：按落点分类的 131 条词对 + 三档判定
@@ -39,16 +39,16 @@ wanan-skill/
 ### 情况一：装成 DSH 插件（推荐）
 
 ```sh
-dsh plugin --profile web add github:17897693/wanan-skill
+dsh plugin --profile web add github:17897693/wen-wanan
 ```
 
-装好后在会话里直接说「晚安」「哄我睡」等触发词即可，模型会自动调用 `skill("wanan")`。
+装好后在会话里直接说「晚安」「哄我睡」等触发词即可，模型会自动调用 `skill("wen-wanan")`。
 
 插件本身**不注册任何工具**，只负责把 `SKILL.md` 装载进技能目录——所以它不会影响你现有的其它插件。
 
 ### 情况二：手动放进技能目录
 
-把 `SKILL.md` 与 `references/` 放进技能目录，**文件夹名与 `SKILL.md` 里的 `name` 保持一致**（`wanan`），保持相对路径不变。
+把 `SKILL.md` 与 `references/` 放进技能目录，**文件夹名与 `SKILL.md` 里的 `name` 保持一致**（`wen-wanan`），保持相对路径不变。
 
 `SKILL.md` 顶部 `---` 之间是元数据：
 

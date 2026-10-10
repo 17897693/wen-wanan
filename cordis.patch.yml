@@ -6,8 +6,8 @@
 - insert:
     # 把本仓库的 SKILL.md 注册成可发现的 skill，使每个会话的 turn-0 catalog
     # 里出现「晚安」（body：./SKILL.md）。本插件不注册任何工具。
-    - id: skill-wanan
-      name: wanan-skill
+    - id: skill-wen-wanan
+      name: wen-wanan
 # 启用默认被 @deepseek-ai/dsh-web-app 关闭的 skill 子系统：没有这三行，磁盘上的
 # 技能永远不会被发现，模型也没有调用它们的工具，而且不会有任何报错。
 - id: skill-filesystem

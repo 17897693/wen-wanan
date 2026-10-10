@@ -1,5 +1,5 @@
 {
-  "name": "wanan-skill",
+  "name": "wen-wanan",
   "version": "1.2.0",
   "type": "module",
   "license": "MIT",
@@ -7,7 +7,7 @@
     "dsh-plugin",
     "deepseek-harness",
     "skill",
-    "wanan",
+    "wen-wanan",
     "晚安",
     "睡前",
     "情话",

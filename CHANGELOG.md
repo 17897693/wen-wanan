@@ -1,4 +1,4 @@
-# CHANGELOG — 晚安 / wanan
+# CHANGELOG — 晚安 / wen-wanan
 
 记录技能内容的每次改动。版本号与 `SKILL.md` frontmatter 里的 `version` 保持一致。
 
@@ -12,10 +12,14 @@
 | `cordis.patch.yml` | DSH bundle 清单（收录硬门槛之一） |
 | `package.json` | npm 元数据，`dsh.bundle.patch` 指向上面那份清单 |
 
+**发布名定为 `wen-wanan`**（包名 / 仓库名 / 技能名三者一致）。
+
+先前 1.0.0 条目里「技能名由 `晚安` 改为 `wanan`」记录的是当时的改动事实，予以保留；本次在**首次公开发布前**统一为 `wen-wanan`，因此下文历史条目中的 `wanan` / `wanan-skill` 字样属于**当时的命名**，不是笔误。
+
 安装方式：
 
 ```sh
-dsh plugin --profile web add github:17897693/wanan-skill
+dsh plugin --profile web add github:17897693/wen-wanan
 ```
 
 **技能内容（`SKILL.md` 与 `references/`）与 1.2.0 打包版逐字节一致，未作任何改动**——所以 `SKILL.md` 与 `package.json` 的版本号都保持 `1.2.0`。纯提示词用法（复制 `SKILL.md` 到任意 AI 助手）同样不受影响。
