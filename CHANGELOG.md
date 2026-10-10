@@ -2,6 +2,26 @@
 
 记录技能内容的每次改动。版本号与 `SKILL.md` frontmatter 里的 `version` 保持一致。
 
+## 仓库形态变更（不改技能内容，版本号不变）
+
+本仓库在 1.2.0 的技能内容之外，**额外提供 DSH 插件形态**，以便被 dshbase 插件目录收录：
+
+| 新增文件 | 作用 |
+|---|---|
+| `index.js` | DSH 插件入口：把 `SKILL.md` 注册成可发现的 skill。**不注册任何工具**，只做装载 |
+| `cordis.patch.yml` | DSH bundle 清单（收录硬门槛之一） |
+| `package.json` | npm 元数据，`dsh.bundle.patch` 指向上面那份清单 |
+
+安装方式：
+
+```sh
+dsh plugin --profile web add github:17897693/wanan-skill
+```
+
+**技能内容（`SKILL.md` 与 `references/`）与 1.2.0 打包版逐字节一致，未作任何改动**——所以 `SKILL.md` 与 `package.json` 的版本号都保持 `1.2.0`。纯提示词用法（复制 `SKILL.md` 到任意 AI 助手）同样不受影响。
+
+---
+
 ## 1.2.0 — 2026-10-10
 
 ### 修复

@@ -1,0 +1,39 @@
+{
+  "name": "wanan-skill",
+  "version": "1.2.0",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "skill",
+    "wanan",
+    "晚安",
+    "睡前",
+    "情话",
+    "谐音梗"
+  ],
+  "description": "DeepSeek Harness 技能：情侣向睡前陪伴。一句温柔情话 → 一个谐音梗猜谜小故事 → 一句温柔晚安。131 条谐音词对、43 个落点，纯 Markdown、零依赖。",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "SKILL.md",
+    "references/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
